@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJP-9n-jIn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duas zebras" translatesAutoresizingMaskIntoConstraints="NO" id="2nf-iV-VE6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="leading" secondItem="3S8-1U-7p2" secondAttribute="leading" id="1vb-Qv-JSz"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="top" secondItem="3S8-1U-7p2" secondAttribute="top" id="9Ga-2d-Y3E"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="bottom" secondItem="3S8-1U-7p2" secondAttribute="bottom" constant="818" id="RM5-ll-OW2"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="bottom" secondItem="eO8-Ze-U4X" secondAttribute="bottom" id="S7b-xv-lG1"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="trailing" secondItem="3S8-1U-7p2" secondAttribute="trailing" constant="414" id="a4e-nb-MAm"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="leading" secondItem="eO8-Ze-U4X" secondAttribute="leading" id="eFo-qq-sWW"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="trailing" secondItem="eO8-Ze-U4X" secondAttribute="trailing" id="nUk-KM-juV"/>
+                                    <constraint firstItem="2nf-iV-VE6" firstAttribute="top" secondItem="eO8-Ze-U4X" secondAttribute="top" id="ntf-3G-9xn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="3S8-1U-7p2"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="eO8-Ze-U4X"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xJP-9n-jIn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2bu-VB-8HK"/>
+                            <constraint firstItem="xJP-9n-jIn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Ez-GV-nDg"/>
+                            <constraint firstItem="xJP-9n-jIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VGI-Zg-uyW"/>
+                            <constraint firstItem="xJP-9n-jIn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cES-s4-OTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2nf-iV-VE6" id="hlQ-5n-Lji"/>
+                        <outlet property="scrollView" destination="xJP-9n-jIn" id="ZYJ-gN-fDm"/>
+                        <outlet property="twoZebras" destination="2nf-iV-VE6" id="3CD-Uy-tgS"/>
+                        <outlet property="twozebras" destination="2nf-iV-VE6" id="4DX-ZR-gJE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duas zebras" width="1920" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
